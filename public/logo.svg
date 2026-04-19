@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 275 80" fill="none">
+  <defs>
+    <linearGradient id="grad_lime" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D9F99D" /> <stop offset="100%" stop-color="#84CC16" /> </linearGradient>
+    
+    <linearGradient id="grad_cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67E8F9" /> <stop offset="100%" stop-color="#0891B2" /> </linearGradient>
+    
+    <linearGradient id="grad_blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93C5FD" /> <stop offset="100%" stop-color="#2563EB" /> </linearGradient>
+
+    <filter id="soft_glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <g transform="translate(18, 10) skewX(-12)" filter="url(#soft_glow)">
+    <rect x="28" y="0" width="52" height="16" rx="8" fill="url(#grad_lime)" />
+    <rect x="14" y="22" width="52" height="16" rx="8" fill="url(#grad_cyan)" />
+    <rect x="0" y="44" width="52" height="16" rx="8" fill="url(#grad_blue)" />
+  </g>
+
+  <text x="113" y="41" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="36" letter-spacing="-1" dominant-baseline="middle">
+    <tspan fill="#FFFFFF" font-weight="800">Link</tspan>
+    <tspan fill="#94A3B8" font-weight="300">Stack</tspan>
+  </text>
+</svg>
